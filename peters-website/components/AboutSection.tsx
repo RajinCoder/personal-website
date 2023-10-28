@@ -1,17 +1,20 @@
+"use client";
+
 import React from "react";
-import Image from "next/image";
-import Ansh from "../images/ansh-chan.png";
+import Typewriter from "typewriter-effect";
 
 const AboutSection = () => {
   return (
-    <div className=" w-full h-full p-4 grid grid-rows-2 grid-cols-2 gap-y-10">
+    <div
+      id="AboutSection"
+      className=" w-full h-full p-4 grid grid-rows-2 grid-cols-1 gap-y-10 items-center"
+    >
       <div className="col-span-1 text-9xl">
-        <h1>About Me...</h1>
+        <Typewriter
+          options={{ strings: ["About Me..."], autoStart: true, loop: true }}
+        />
       </div>
-      <div className="col-span-1 row-span-1">
-        <Image src={Ansh} alt="Me" className="w-1/4 h-auto" />
-      </div>
-      <div className="col-span-2 text-2xl">
+      <div className="col-span-1 text-2xl">
         <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam magni,
           culpa sunt non mollitia minima laboriosam inventore quas saepe et
