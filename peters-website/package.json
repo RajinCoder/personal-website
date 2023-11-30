@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "convert-to-es": "babel src --out-dir dist --extensions \".ts\""
   },
   "dependencies": {
     "@react-pdf/renderer": "^3.1.14",
