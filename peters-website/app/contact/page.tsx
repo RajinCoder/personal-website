@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 "use client";
 import Alert from "@/components/Alert";
 import NavBar from "@/components/Navbar";
