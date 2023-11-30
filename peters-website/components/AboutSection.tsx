@@ -1,5 +1,5 @@
 "use client";
-
+/* eslint-disable react/no-unescaped-entities */
 import React from "react";
 import Typewriter from "typewriter-effect";
 import Image from "next/image";
