@@ -5,9 +5,10 @@
 
 body {
   color: white;
-  background: linear-gradient(to bottom, #4a5b55, #0d1410, #040404);
+  background: black;
   position: relative; /* Make the body container relative for positioning */
   background-size: 100% auto; /* Auto width and full height for the gradient */
+  background-repeat: repeat;
 
   /* Add a pseudo-element for the background image */
   &::before {
@@ -17,12 +18,13 @@ body {
     right: 0;
     bottom: 0;
     left: 0;
-    background-image: url('../images/min_background.jpeg');
+    background-image: url('../images/dark.jpg');
     background-size: cover;
     opacity: 0.7; /* Adjust the opacity as needed */
     z-index: -1; /* Place it behind the gradient */
   }
 }
+
 .sticky-top {
   position: sticky;
   top: 0; /* Adjust this value as needed */

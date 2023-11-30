@@ -10,6 +10,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <title>{"PM | Portfolio Website"}</title>
       <body className={inter.className}>{children}</body>
     </html>
   );
