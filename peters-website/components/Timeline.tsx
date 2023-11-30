@@ -62,7 +62,7 @@ const Timeline = () => {
                   <h3 className="mb-3 font-bold text-2xl">
                     {experience.title}
                   </h3>
-                  <p className="pb-4 text-sm text-gray-100">
+                  <p className="pb-4 text-sm text-gray-200">
                     {experience.company}
                   </p>
                   <hr />
