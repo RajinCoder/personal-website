@@ -2,10 +2,12 @@ import React, { useState } from "react";
 import { Document, Page, pdfjs } from "react-pdf";
 import DownloadButton from "./DownloadButton";
 
-pdfjs.GlobalWorkerOptions.workerSrc = new URL(
+const workerSrc = new URL(
   "pdfjs-dist/build/pdf.worker.min.js",
   import.meta.url
 ).toString();
+
+pdfjs.GlobalWorkerOptions.workerSrc = workerSrc;
 
 function PDFViewer() {
   return (
