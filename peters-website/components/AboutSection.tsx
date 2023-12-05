@@ -8,25 +8,23 @@ const AboutSection = () => {
   return (
     <div
       id="AboutSection"
-      className=" w-full h-full p-4 grid grid-rows-2 grid-cols-2 gap-y-10 items-center"
+      className=" w-full h-full p-4 grid grid-rows-2 grid-cols-2 sm:grid-rows-2 sm:grid-cols-2 sm:gap-y-10 sm:items-center"
     >
-      <div className="col-span-1 text-9xl">
+      <div className="col-span-1 text-5xl sm:text-7xl md:text-9xl">
         <Typewriter
           options={{ strings: ["About Me..."], autoStart: true, loop: true }}
         />
       </div>
-      <div className="col-span-1 flex justify-center">
-        <div className="max-h-none h-max">
-          <Image
-            className="max-h-none border-4 w-full border-black rounded-full"
+      <div className="sm:col-span-1 pb-10">
+        <div className="h-full md:flex justify-center">
+          <img
+            className="border-4 w-full sm:w-3/4 lg:w-1/2 border-black rounded-full"
             src={"/peter.png"}
             alt={"profile pic"}
-            height={300}
-            width={350}
-          ></Image>
+          />
         </div>
       </div>
-      <div className="col-span-2 text-2xl font-sans font-thin">
+      <div className="col-span-2 text-xl sm:text-2xl font-sans font-thin">
         <p>
           Hey, My name is Peter Moise, I'm a second year studying computer
           science at Northeastern University. Originally from Central Florida, I

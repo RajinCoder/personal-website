@@ -12,7 +12,7 @@ pdfjs.GlobalWorkerOptions.workerSrc = workerSrc;
 function PDFViewer() {
   return (
     <div className="relative w-full flex flex-col mt-10">
-      <div>
+      <div className="hidden sm:block">
         <Document file="documents/PetersResume.pdf">
           <Page
             pageNumber={1}
@@ -23,7 +23,7 @@ function PDFViewer() {
           />
         </Document>
       </div>
-      <div className="mt-10 h-16">
+      <div className="mt-10 h-16 w-full">
         <DownloadButton />
       </div>
     </div>

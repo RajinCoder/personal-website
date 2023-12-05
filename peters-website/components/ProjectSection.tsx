@@ -10,9 +10,9 @@ const fairShare =
 const ProjectSection = () => {
   return (
     <div className="h-full flex flex-col items-center">
-      <div className="text-8xl">Projects</div>
-      <div className="h-full w-full mt-20 flex justify-evenly">
-        <div className="h-4/5 w-1/4">
+      <div className="text-8xl font-sans">Projects</div>
+      <div className="h-full w-full mt-14 flex flex-wrap justify-evenly">
+        <div className="h-4/5 w-full mt-5 px-2 sm:w-1/3">
           <ProjectCard
             imageSrc={"FoodDiary.png"}
             targetSection1="https://food-diary-omega.vercel.app/"
@@ -21,7 +21,7 @@ const ProjectSection = () => {
             message={foodDiary}
           />
         </div>
-        <div className="h-4/5 w-1/4">
+        <div className="h-4/5 w-full mt-10 sm:mt-5 px-2 sm:w-1/3">
           <ProjectCard
             imageSrc={"santa.png"}
             targetSection1="https://sigma-santa.vercel.app"
@@ -30,7 +30,7 @@ const ProjectSection = () => {
             message={secretSanta}
           />
         </div>
-        <div className="h-4/5 w-1/4">
+        <div className="h-4/5 w-full mt-10 sm:mt-5 pb-5 sm:pb-0 px-2 sm:w-1/3">
           <ProjectCard
             imageSrc={"app.png"}
             targetSection1="https://github.com/Oasis-NEU/f23-group04#readme"

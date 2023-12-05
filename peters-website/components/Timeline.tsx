@@ -33,8 +33,8 @@ const Timeline = () => {
   ];
 
   return (
-    <div id="Timeline" className="h-full px-20">
-      <h1 className="text-8xl">Experience</h1>
+    <div id="Timeline" className="h-full sm:px-20">
+      <h1 className="px-4 text-5xl sm:text-8xl">Experience</h1>
       <div className="grid grid-rows-3 p-4 mt-10">
         {experiences.map((experience, index) => (
           <div
@@ -43,14 +43,14 @@ const Timeline = () => {
               index % 2 === 0 ? "flex-row" : "flex-row-reverse"
             }`}
           >
-            <div className="w-2/5 px-2 py-10"></div>
-            <div className="w-1/5 flex justify-center relative">
+            <div className="hidden sm:block sm:w-2/5 sm:px-2 sm:py-10"></div>
+            <div className="hidden sm:w-1/5 sm:flex sm:justify-center sm:relative">
               <div className="absolute h-full w-1 bg-dark-blueish"></div>
               <div className="absolute -z-1 flex items-center justify-center h-8 w-8 rounded-full bg-white border-2 border-teal-900">
                 {/* Date or month */}
               </div>
             </div>
-            <div className="w-2/5 ">
+            <div className="w-full mb-5 sm:w-2/5 sm:mb-0">
               <div className="flex flex-col w-full h-full rounded shadow-lg bg-dark-blueish px-4 py-5">
                 <div className="text-gray-600 mb-2 flex justify-between">
                   <div className="font-bold">{experience.date}</div>

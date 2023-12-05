@@ -2,7 +2,7 @@
 import React from "react";
 const DownloadButton = () => {
   return (
-    <button className="flex justify-center h-full w-1/6 bg-dark-blueish hover:bg-dark-dark-blueish shadow-sm">
+    <button className="flex justify-center m-4 rounded-md p-4 h-full sm:w-1/6 bg-dark-blueish hover:bg-dark-dark-blueish shadow-sm">
       <a
         href="/documents/PetersResume.pdf"
         download="PetersResume.pdf"
