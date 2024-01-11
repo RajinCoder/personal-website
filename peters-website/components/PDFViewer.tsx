@@ -12,6 +12,9 @@ pdfjs.GlobalWorkerOptions.workerSrc = workerSrc;
 function PDFViewer() {
   return (
     <div className="relative w-full flex flex-col mt-10">
+      <div className="mb-10 h-16 w-full">
+        <DownloadButton />
+      </div>
       <div className="hidden sm:block">
         <Document file="documents/PetersResume.pdf">
           <Page
@@ -22,9 +25,6 @@ function PDFViewer() {
             scale={1.3}
           />
         </Document>
-      </div>
-      <div className="mt-10 h-16 w-full">
-        <DownloadButton />
       </div>
     </div>
   );
