@@ -3,18 +3,16 @@ import React from "react";
 interface Props {
   date: string;
   jobTitle: string;
-  summary: string[];
+  summary: string;
 }
 const JobEntries = ({ date, jobTitle, summary }: Props) => {
   return (
-    <div className="grid grid-cols-3 gap-4 pb-10 pt-10 border-b border-white-10">
-      <div className="date">
-        <h3 className="text-2xl">{date}</h3>
+    <div className="bg-[#313131] hover:bg-[#242424] hover:shadow-xl shadow-md rounded-md flex p-6 space-x-4 font-thin">
+      <div className="w-[100px] shrink-0">
+        <h3 className="text-md">{date}</h3>
       </div>
-      <div className="title">
-        <h2 className="text-4xl">{jobTitle}</h2>
-      </div>
-      <div className="summary">
+      <div className="flex flex-col">
+        <h2 className="text-2xl">{jobTitle}</h2>
         <p>{summary}</p>
       </div>
     </div>

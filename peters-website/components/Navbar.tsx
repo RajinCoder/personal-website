@@ -1,44 +1,42 @@
 import React from "react";
-import LinkButton from "./LinkButton";
 import Image from "next/image";
 import OutsideLinkButton from "./OutsideLinkButton";
+import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <nav className="bg-dark-blueish h-2/5 w-full shadow-md grid grid-cols-6 lg:grid-cols-10">
-      <LinkButton
-        targetSection=""
-        styling="bg-dark-blueish w-full h-full hover:bg-dark-dark-blueish shadow-sm text-xs sm:text-sm lg:text-base"
-        name="About"
-      />
-      <LinkButton
-        targetSection="experience"
-        styling="bg-dark-blueish w-full h-full hover:bg-dark-dark-blueish shadow-sm text-xs sm:text-sm lg:text-base"
-        name="Experience"
-      />
-      <LinkButton
-        targetSection="projects"
-        styling="bg-dark-blueish w-full h-full hover:bg-dark-dark-blueish shadow-sm text-xs sm:text-sm lg:text-base"
-        name="Projects"
-      />
-      <LinkButton
-        targetSection="contact"
-        styling="bg-dark-blueish w-full h-full hover:bg-dark-dark-blueish shadow-sm text-xs sm:text-sm lg:text-base"
-        name="Contact"
-      />
-      <div className="hidden lg:block lg:col-span-4"></div>
-      <OutsideLinkButton
-        styling={"w-1/3 h-full justify-self-center"}
-        svgStyling="w-full md:w-3/4 lg:w-full"
-        targetSection={"https://www.linkedin.com/in/petermoise/"}
-        src={"linkedin.svg"}
-      />
-      <OutsideLinkButton
-        styling={"w-1/3 h-full"}
-        svgStyling="w-full md:w-3/4 lg:w-full"
-        targetSection={"https://github.com/RajinCoder"}
-        src={"github.svg"}
-      />
+    <nav className="bg-dark-blueish h-2/5 w-full shadow-md flex justify-between ">
+      <div className="w-3/4 flex ">
+        <Link
+          className="hover:bg-dark-dark-blueish content-center p-4"
+          href="/"
+        >
+          About
+        </Link>
+        <Link
+          className="hover:bg-dark-dark-blueish content-center p-4"
+          href="/experience"
+        >
+          Experience
+        </Link>
+        <Link
+          className="hover:bg-dark-dark-blueish content-center p-4"
+          href="/projects"
+        >
+          Projects
+        </Link>
+      </div>
+
+      <div className="w-1/4 flex justify-end">
+        <OutsideLinkButton
+          targetSection={"https://www.linkedin.com/in/petermoise/"}
+          src={"linkedin.svg"}
+        />
+        <OutsideLinkButton
+          targetSection={"https://github.com/RajinCoder"}
+          src={"github.svg"}
+        />
+      </div>
     </nav>
   );
 };
