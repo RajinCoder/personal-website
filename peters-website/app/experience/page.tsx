@@ -1,5 +1,4 @@
 import NavBar from "@/components/Navbar";
-import PDFViewer from "@/components/PDFViewer";
 import JobEntries from "@/components/JobEntries";
 import DownloadButton from "@/components/DownloadButton";
 import Link from "next/link";
@@ -45,7 +44,7 @@ const experience_list = [ukg_exp, seo_exp, ner_exp, oasis_exp, husky_exp];
 
 export default function page() {
   return (
-    <main className="flex flex-col h-screen space-y-40 font-sans">
+    <main className="flex flex-col h-screen space-y-40">
       <div className="fixed top-0 h-1/5 w-full z-10">
         <NavBar />
       </div>
