@@ -52,6 +52,7 @@ export default function page() {
         <h1 className="text-3xl">Experience</h1>
         {experience_list.map((exp_dict) => (
           <JobEntries
+            key={exp_dict.company}
             date={exp_dict.duration}
             jobTitle={exp_dict.job_title + " @ " + exp_dict.company}
             summary={exp_dict.descr}
